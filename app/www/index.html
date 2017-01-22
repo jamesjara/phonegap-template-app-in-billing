@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy"   />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    --> 
+    <meta http-equiv="Content-Security-Policy">    
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]--> 
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
+ 
+    <title>Hello World</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- END #navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+          <button style="visibility:hidden" type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">MANUAL 2017</a>
+          <nav  class="nav-collapse collapse">
+            <ul class="nav social unstyled inline pull-right">
+              <li><a class="icon-1 icon" target="_blank" href="">@ Facebook</a></li>
+              <li><a class="icon-2 icon" target="_blank" href="">@ Twitter</a></li>
+              <li><a class="icon-3 icon" target="_blank" href="#">@ Vimeo</a></li>
+              <li><a class="icon-4 icon" target="_blank" href="">@ Dribbble</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
+    <!-- END #navbar -->
+
+    <!-- START .container -->
+    <div class="container">
+
+      <section style="    padding-top: 80px;" class="hero-unit">        
+        <h1>Descarga ahora el Manual, <span> de estudio para tu examen de manejo para Cosevi .</span>   <span class="glyphicon glyphicon-download"></span></h1>
+        <p style="display: none;visibility:hidden">
+          mas informacuon del examen de manejo en linea de cosevi.
+        </p> 
+        <a href="#subscribe" class="btn btn-primary btn-large"  onclick="buy();" >Click para descargar</a>  
+		<p class="event listening" style="    font-size: 10px;">*Costo 1 Credito SMS</p>  
+      </section> 
+   </div> 
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="fortumo"></script>
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>    
+    <script src="js/custom.js"></script>  
+    <script src="js/myWallet.js"></script>  
+    <script type="text/javascript" src="js/index.js"></script>  
+</body> 
+</html>
