@@ -17,10 +17,7 @@
     <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />       
 	<gap:plugin name="org.apache.cordova.splashscreen" source="npm" />  
 	<gap:plugin name="fortumo-sms-cordova-plugin" source="npm" /> 
-<gap:plugin name="cc.fovea.cordova.purchase" source="npm" version="6.0.0">
-   <param name="BILLING_KEY" value="MIIB...."/>
-</gap:plugin>
-    
+ 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />

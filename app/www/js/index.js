@@ -99,7 +99,8 @@ var app = {
 app.initialize(); 
 
 function buy() { 
-	myWallet.purchaseProduct("759d862f18c1f140b1fe3331ac0581d7");	
+	window.open('https://goo.gl/imXVEc', '_system');
+	//myWallet.purchaseProduct("759d862f18c1f140b1fe3331ac0581d7");	
   }
 
 
